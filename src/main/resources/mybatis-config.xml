@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTDConfig3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--级联懒加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--二级缓存-->
+        <setting name="cacheEnabled" value="true"/>
+        <!--下划线转驼峰式-->
+        <setting name="mapUnderscoreTOCamelCase" value="true"/>
+        <!--日志前缀-->
+        <setting name="logPrefix" value="sql."/>
+    </settings>
+    
+    <typeAliases>
+        <package name="com.Entity"/>
+    </typeAliases>
+</configuration>
